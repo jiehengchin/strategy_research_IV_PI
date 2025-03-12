@@ -3,6 +3,7 @@ Asset : BTCUSDT
 Data source : Binance API and Deribit API  
 Data: Price data of BTC(Binance), Implied Volatility(Deribit), Premium Index(Binance)   
 Idea : Volatility Spread and Premium Index might generate trading signal, so I'm just looking into it.
+
 Model: XGBoost
 
 Signal: label as -1 (short), 0 (no position), 1 (long). If future cumulative return(I have multiple period here) >2% label as 1, < -2% label as -1, 0 otherwise.
